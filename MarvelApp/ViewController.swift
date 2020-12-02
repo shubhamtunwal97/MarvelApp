@@ -23,12 +23,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         mList = []
         
-        mList?.append(MarvelObject(mImg: UIImage(named: "deadpool"), mName: "Deadpool", mDesc: "Ajax, a twisted scientist, experiments on Wade Wilson, a mercenary, to cure him of cancer and give him healing powers. However, the experiment leaves Wade disfigured and he decides to exact revenge."))
-        mList?.append(MarvelObject(mImg: UIImage(named: "spiderman"), mName: "Spiderman", mDesc: "Spider-Man is a fictional superhero created by writer-editor Stan Lee and writer-artist Steve Ditko. He first appeared in the anthology comic book Amazing Fantasy #15 in the Silver Age of Comic Books."))
-        mList?.append(MarvelObject(mImg: UIImage(named: "hulk"), mName: "Hulk", mDesc: "The Hulk is a fictional superhero appearing in publications by the American publisher Marvel Comics. Created by writer Stan Lee and artist Jack Kirby, the character first appeared in the debut issue of The Incredible Hulk."))
-        mList?.append(MarvelObject(mImg: UIImage(named: "thanos"), mName: "Thanos", mDesc: "Thanos is a fictional supervillain appearing in American comic books published by Marvel Comics. The character was created by writer-artist Jim Starlin, and made his first appearance in The Invincible Iron Man #55."))
-        
-        
+     
         //load data from coredata
         
         
