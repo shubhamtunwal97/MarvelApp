@@ -19,7 +19,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         mList = []
         
@@ -32,7 +31,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let entity = NSEntityDescription.entity(forEntityName: "MarvelEntity1", in: context)
         
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "MarvelEntity1")
-        //request.predicate = NSPredicate(format: "age = %@", "12")
         request.returnsObjectsAsFaults = false
         do {
             let result = try context.fetch(request)
@@ -51,11 +49,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     @IBAction func toAddVc(_ sender: Any) {
-        //        let storyboardx = UIStoryboard(name: "Main", bundle: Bundle.main)
-        //        let destination = storyboard.instantiateViewController(withIdentifier: "NewMarvelITemViewController") as! NewMarvelITemViewController
-        //
-        //        destination.vc = self
-        //        self.navigationController?.pushViewController(destination, animated: true)
         
         let next = self.storyboard?.instantiateViewController(withIdentifier: "NewMarvelITemViewController") as! NewMarvelITemViewController
         next.vc  =  self
